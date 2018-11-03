@@ -1,0 +1,147 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ProximaNova-Regular */
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ProximaNova-Regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Proxima Nova"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.svg#MerriweatherSans") format("svg");
+}
+
+body {
+  font-family: "Proxima Nova", serif; }
+
+.first__section{
+  background: url("../img/bg_first.jpg") no-repeat;
+  background-size: cover;
+  height: 750px;
+  color: white;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.header__menu{
+  padding-top: 40px;
+}
+
+.header__menu-list{
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.header__menu-item{
+  padding-right: 35px;
+  transition: .2s;
+  &:last-child{
+    padding-right: 0;
+  }
+  &:hover{
+    margin-top: -4px;
+  }
+}
+
+.header__menu-link{
+  color: white;
+  &:hover{
+    color: white;
+    text-decoration: none;
+  }
+}
+.first__body-h1{
+  font-size: 88px;
+  line-height: 1;
+}
+.first__body-tit{
+  font-size: 33px;
+}
+.first__section-content{
+  height: 100%;
+  position: relative;
+}
+
+.first__body{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.whu__section{
+  position: relative;
+}
+
+.whu__body{
+  padding-top: 250px;
+  padding-bottom: 170px;
+}
+.content__h2{
+  font-size: 48px;
+}
+.whu__body-text{
+  line-height: 1.8;
+  font-size: 20px;
+}
+
+.whu__img{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 50px;
+  max-width: 620px;
+  img{
+    width: 100%;
+  }
+}
+.our__section{
+  position: relative;
+}
+.our__content{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.our__img{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.our__body{
+  padding-top: 175px;
+}
+.our__list{
+  display: flex;
+  padding-left: 0;
+  list-style-type: none;
+  color: #794a79;
+}
+.our__item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our__item-tit{
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 28px;
+}
+.our__item-sub{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.our__body-text{
+  font-size: 20px;
+  line-height: 1.8;
+}
